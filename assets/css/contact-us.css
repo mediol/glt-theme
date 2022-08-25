@@ -1,0 +1,196 @@
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.page-template-page-contact .contact {
+  margin-top: 89px;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-template-page-contact .contact .map-form {
+  height: 250px;
+}
+
+.page-template-page-contact .contact .contact-form {
+  padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-template-page-contact .contact .contact-form h2 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: capitalize;
+  padding: 25px 0;
+}
+
+.page-template-page-contact .contact .contact-form .form-control {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  background: rgba(51, 51, 51, 0.03);
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.page-template-page-contact .contact .contact-form .checkbox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.5);
+  letter-spacing: 1px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.page-template-page-contact .contact .contact-form .checkbox label {
+  padding-left: 30px;
+}
+
+.page-template-page-contact .contact .contact-form .checkbox input[type=checkbox] {
+  display: none;
+}
+
+.page-template-page-contact .contact .contact-form .checkbox input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 1.7px solid #BE102A;
+  border-radius: 0.2em;
+  width: 18px;
+  height: 18px;
+  vertical-align: bottom;
+  color: transparent;
+  -webkit-transition: .2s;
+  transition: .2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.page-template-page-contact .contact .contact-form .checkbox input[type=checkbox] + label:active:before {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.page-template-page-contact .contact .contact-form .checkbox input[type=checkbox]:checked + label:before {
+  background-color: #BE102A;
+  border-color: #BE102A;
+  color: #fff;
+}
+
+.page-template-page-contact .contact .contact-form .checkbox input[type=checkbox]:disabled + label:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border-color: #aaa;
+}
+
+.page-template-page-contact .contact .contact-form .checkbox input[type=checkbox]:checked:disabled + label:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: #be102a;
+  border-color: #be102a;
+}
+
+.page-template-page-contact .contact .contact-form .book-my-covid {
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 17px;
+  margin: 25px 0;
+  background: linear-gradient(149.43deg, #E61030 0%, #BE102A 100%);
+  -webkit-box-shadow: 0px 12px 35px rgba(192, 16, 43, 0.12);
+          box-shadow: 0px 12px 35px rgba(192, 16, 43, 0.12);
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+}
+
+.page-template-page-contact .right-section-header {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .page-template-page-contact .contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+    height: 100vh;
+  }
+  .page-template-page-contact .contact .map-form {
+    height: 100vh;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+  .page-template-page-contact .contact .contact-form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+    padding: 0;
+  }
+  .page-template-page-contact .contact .contact-form .contact-form-inner {
+    width: 75%;
+    margin: 0 auto;
+    padding-right: 20%;
+  }
+  .page-template-page-contact .contact .contact-form .contact-form-inner h2 {
+    font-size: 35px;
+    line-height: 43px;
+    padding: 0;
+  }
+  .page-template-page-contact .contact .contact-form .contact-form-inner .input-areas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px;
+    margin: 25px 0;
+  }
+  .page-template-page-contact .contact .contact-form .contact-form-inner .input-areas > * {
+    margin: 0;
+  }
+  .page-template-page-contact .contact .contact-form .contact-form-inner .input-areas #phone,
+  .page-template-page-contact .contact .contact-form .contact-form-inner .input-areas #email {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+  }
+  .page-template-page-contact .contact .contact-form .contact-form-inner .book-my-covid {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}

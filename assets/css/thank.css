@@ -1,0 +1,155 @@
+.thank__logo {
+    position: absolute;
+    z-index: 5;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.thank__logo img {
+    filter: brightness(25);
+}
+
+main {
+    min-height: 100vh;
+    color: #fff;
+}
+
+.page__wrap {
+    min-height: 100vh;
+    padding-top: 19vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+h1 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 700;
+  opacity: .1;
+}
+
+.page__content {
+  text-align: center;
+}
+
+.page__content p {
+  margin: -45px 0 0 0;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+.required_block {
+    max-width: 676px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 11px;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.req_btn {
+    display: block;
+    width: 100%;
+    padding: 17px 32px;
+    margin-top: 12px;
+    background: linear-gradient(135deg, #FE1602 0%, #AF0E00 100%);
+    box-shadow: 0px 12px 35px rgba(192, 16, 43, 0.12);
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.book_info {
+    margin: 30px 0 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+}
+
+.book_info p {
+    margin: 0;
+}
+
+.book_info a {
+    display: inline-flex;
+    align-items: start;
+    margin-top: 15px;
+    max-width: 253px;
+    text-decoration: underline;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.35;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.book_info a img {
+    width: 16px;
+    height: auto;
+    margin-top: 5px;
+    margin-right: 11px;
+}
+
+@media (min-width: 768px) {
+  .page__wrap {
+      padding-top: 14vh;
+  }
+  h1 {
+    font-size: calc(190vw / 19.2);
+  }
+  .page__content p {
+    margin-top: -140px;
+    font-size: 46px;
+    line-height: 57px;
+  }
+  
+  .required_block {
+      padding: 30px;
+      font-size: 21px;
+  }
+  
+  .req_btn {
+      padding: 17px 32px;
+      margin-top: 26px;
+  }
+  
+  .book_info {
+      margin: 50px 0 115px;
+      font-size: 24px;
+  }
+  
+  .book_info p {
+      margin: 0;
+  }
+  
+  .book_info a {
+      margin-top: 15px;
+      font-size: 21px;
+      max-width: 304px;
+  }
+  
+  .book_info a img {
+      width: 16px;
+      margin-top: 5px;
+      margin-right: 11px;
+  }
+}
+
+@media (min-width: 1441px) {
+    .page__content p {
+        margin-top: -170px;
+    }
+}

@@ -1,0 +1,497 @@
+/* PEN STYLES ========== */
+
+a,
+
+.side-menu {
+
+  -webkit-transition: all 300ms ease-in-out;
+
+  transition: all 300ms ease-in-out;
+
+}
+
+
+
+/* MENU CONTAINER ----- */
+
+.side-menu {
+
+  background: linear-gradient(149.43deg, #0065B3 0%, #004D88 100%);
+
+  height: 100vh;
+
+  right: -80%;
+
+  position: fixed;
+
+  top: 0;
+
+  width: 80%;
+
+  z-index: 150;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+
+  -webkit-box-orient: vertical;
+
+  -webkit-box-direction: normal;
+
+      -ms-flex-direction: column;
+
+          flex-direction: column;
+
+  -webkit-box-pack: justify;
+
+      -ms-flex-pack: justify;
+
+          justify-content: space-between;
+
+}
+
+
+
+.side-menu .container {
+
+  padding: 89px 0 0 0;
+
+}
+
+
+
+/*BOTTOM SOCIAL LINKS*/
+
+.side-menu .menu-social {
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+
+  -webkit-box-pack: center;
+
+      -ms-flex-pack: center;
+
+          justify-content: center;
+
+  -webkit-box-orient: horizontal;
+
+  -webkit-box-direction: normal;
+
+      -ms-flex-direction: row;
+
+          flex-direction: row;
+
+  -webkit-box-align: center;
+
+      -ms-flex-align: center;
+
+          align-items: center;
+
+  margin-bottom: 40px;
+
+}
+
+
+
+.side-menu .menu-social .social-media {
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+
+  -ms-flex-pack: distribute;
+
+      justify-content: space-around;
+
+  width: 80px;
+
+  height: -webkit-fit-content;
+
+  height: -moz-fit-content;
+
+  height: fit-content;
+
+}
+
+
+
+.side-menu .menu-social .social-media a {
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  width: 20px;
+
+  height: 20px;
+
+}
+
+
+
+.side-menu .menu-social .social-media .instagram {
+
+  display: block;
+
+  background-image: url(/assets/img/facebook-icon.svg);
+
+}
+
+
+
+.side-menu .menu-social .social-media .facebook {
+
+  display: block;
+
+  background-image: url(/assets/img/instagram-icon.svg);
+
+}
+
+
+
+/* HAMBURGER STYLES ----- */
+
+.burger-box {
+
+  display: block;
+
+  position: absolute;
+
+  top: calc(89px / 2 - 12px);
+
+  right: 250px;
+
+  z-index: 500;
+
+}
+
+
+
+.burger-box a.menu-icon {
+
+  display: inline-block;
+
+  position: relative;
+
+  float: none;
+
+  height: 25px;
+
+  padding: 12px 15px;
+
+  width: 25px;
+
+  z-index: 100;
+
+}
+
+
+
+.burger-box a.menu-icon:hover,
+
+.burger-box a.menu-icon.opened {
+
+  opacity: 1;
+
+}
+
+
+
+.burger-box .menu-icon-box {
+
+  display: inline-block;
+
+  height: 24px;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 30px;
+
+}
+
+
+
+.burger-box .menu-icon-line {
+
+  background: #333333;
+
+  border-radius: 2px;
+
+  display: inline-block;
+
+  height: 3px;
+
+  position: absolute;
+
+  width: 100%;
+
+}
+
+
+
+.burger-box .menu-icon-line--1 {
+
+  top: 2px;
+
+  transition: top 200ms 250ms, -webkit-transform 200ms;
+
+  transition: top 200ms 250ms, transform 200ms;
+
+  transition: top 200ms 250ms, transform 200ms, -webkit-transform 200ms;
+
+  -webkit-transition: top 200ms 250ms, -webkit-transform 200ms;
+
+}
+
+
+
+.burger-box .menu-icon-line--2 {
+
+  top: 10px;
+
+  transition: opacity 0ms 300ms;
+
+  -webkit-transition: opacity 0ms 300ms;
+
+}
+
+
+
+.burger-box .menu-icon-line--3 {
+
+  top: 18px;
+
+  transition: top 100ms 300ms, -webkit-transform 200ms;
+
+  transition: top 100ms 300ms, transform 200ms;
+
+  transition: top 100ms 300ms, transform 200ms, -webkit-transform 200ms;
+
+  -webkit-transition: top 100ms 300ms, -webkit-transform 200ms;
+
+}
+
+
+
+.burger-box .menu-icon.opened .menu-icon-box {
+
+  transform: scale3d(0.9, 0.9, 0.9);
+
+  -webkit-transform: scale3d(0.9, 0.9, 0.9);
+
+}
+
+
+
+.burger-box .menu-icon.opened .menu-icon-line {
+
+  top: 10px;
+
+}
+
+
+
+.burger-box .menu-icon.opened .menu-icon-line--1 {
+
+  background-color: #fff;
+
+  transform: rotate3d(0, 0, 1, 45deg);
+
+  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+
+  transition: top 100ms, -webkit-transform 200ms 250ms;
+
+  transition: top 100ms, transform 200ms 250ms;
+
+  transition: top 100ms, transform 200ms 250ms, -webkit-transform 200ms 250ms;
+
+  -webkit-transition: top 100ms, -webkit-transform 200ms 250ms;
+
+}
+
+
+
+.burger-box .menu-icon.opened .menu-icon-line--2 {
+
+  background-color: #fff;
+
+  opacity: 0;
+
+  transition: opacity 200ms;
+
+  -webkit-transition: opacity 200ms;
+
+}
+
+
+
+.burger-box .menu-icon.opened .menu-icon-line--3 {
+
+  background-color: #fff;
+
+  transform: rotate3d(0, 0, 1, -45deg);
+
+  -webkit-transform: rotate3d(0, 0, 1, -45deg);
+
+  transition: top 200ms, -webkit-transform 200ms 250ms;
+
+  transition: top 200ms, transform 200ms 250ms;
+
+  transition: top 200ms, transform 200ms 250ms, -webkit-transform 200ms 250ms;
+
+  -webkit-transition: top 200ms, -webkit-transform 200ms 250ms;
+
+}
+
+
+
+/* STAGGER LIST ----- */
+
+.list-load {
+
+  display: none;
+
+  list-style: none;
+
+  padding: 0;
+
+  font-style: normal;
+
+}
+
+
+
+.list-load > li {
+
+  padding-bottom: 15px;
+
+}
+
+
+
+.list-load .locations {
+
+  padding: 17px 0;
+
+  border-top: 1.5px solid rgba(255, 255, 255, 0.15);
+
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.15);
+
+}
+
+
+
+.list-load .locations > a {
+
+  padding-bottom: 15px;
+
+}
+
+
+
+.list-load .locations .locations-inner li:not(:first-child) {
+
+  padding-top: 15px;
+
+}
+
+
+
+.list-load .locations .locations-inner a {
+
+  font-family: "Gilroy", sans-serif;
+
+  padding-left: 15px;
+
+  position: relative;
+
+  font-weight: 500;
+
+  font-size: 14px;
+
+  line-height: 16px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+}
+
+
+
+.list-load .locations .locations-inner a::before {
+
+  content: "";
+
+  width: 15px;
+
+  height: 15px;
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: calc(50% - 7.5px);
+
+  background-image: url(/assets/img/menu-location-icon.svg);
+
+  background-repeat: no-repeat;
+
+}
+
+
+
+.list-load .list-item {
+
+  padding-left: 25px;
+
+  opacity: 0;
+
+  -webkit-transition: all 200ms ease-in-out;
+
+  transition: all 200ms ease-in-out;
+
+}
+
+
+
+.list-load .list-item a {
+
+  color: #fff;
+
+  display: block;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  font-size: 17px;
+
+  line-height: 21px;
+
+  font-family: "Montserrat", sans-serif;
+
+  letter-spacing: 1px;
+
+}
+
+
+
+@media screen and (min-width: 576px) {
+
+  .side-menu {
+
+    width: 16vw;
+
+  }
+}
+

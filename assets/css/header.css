@@ -1,0 +1,72 @@
+/* header by Vadim */
+.main-header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 200;
+  padding: 0 5%;
+}
+
+.main-header .header {
+  width: 100%;
+  position: relative;
+  height: 89px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-header .header .logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  margin: auto 0;
+}
+
+.main-header .header .right-section-header {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.tel {
+  color: #fff;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.3px;
+  padding: 12px 15px 12px 50px;
+  border: 1.5px solid #FFFFFF;
+  border-radius: 7px;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.tel::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 18px;
+  top: 10px;
+  background-image: url(../img/phone-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 576px) {
+  .main-header {
+    padding: 0;
+  }
+  .main-header .header {
+    width: 75%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,87 @@
+/* Location hero section | Location page */
+.location-hero {
+  position: relative;
+  padding-top: 118px;
+  padding-bottom: 75px;
+  background: url("../img/loc-hero-bg.jpg") center/cover;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .location-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.location-hero::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../img/location-svg-hero.svg") right bottom/190px no-repeat, linear-gradient(135deg, rgba(0, 106, 171, 0.82) 0%, rgba(0, 76, 123, 0.82) 100%);
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+@media (min-width: 768px) {
+  .location-hero::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../img/location-svg-hero.svg") right bottom/400px no-repeat, linear-gradient(135deg, rgba(0, 106, 171, 0.82) 0%, rgba(0, 76, 123, 0.82) 100%);
+    top: 0;
+    left: 0;
+  }
+}
+
+/* .location-hero .container {
+  width: 1470px;
+  max-width: 100%;
+} */
+
+.location-hero .location-hero-text .location-hero-uptitle__ico {
+  -webkit-filter: grayscale(1) brightness(25);
+          filter: grayscale(1) brightness(25);
+  margin-right: 10px;
+}
+
+.location-hero .location-hero-text h1 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.35;
+  margin: 15px 0 25px;
+}
+
+@media (min-width: 768px) {
+  .location-hero .location-hero-text h1 {
+    font-size: 3.9rem;
+  }
+}
+
+.location-hero .location-hero-text .subtitle {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .location-hero .location-hero-text .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+.location-hero .location-hero-text .subtitle br {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .location-hero .location-hero-text .subtitle br {
+    display: block;
+  }
+}
+
+.location-hero span {
+  font-weight: 600;
+}

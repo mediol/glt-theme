@@ -1,0 +1,121 @@
+/* location */
+.location {
+  position: relative;
+  padding-top: 105px;
+  padding-bottom: 105px;
+  background: linear-gradient(135deg, #006AAB 0%, #004C7B 100%);
+  color: #fff;
+}
+
+.location::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("../img/location-svg-left.svg") left 7px top -50px/auto no-repeat,
+              url("../img/location-svg-right.svg") right -32px top -11px/auto no-repeat;
+}
+
+.location h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .location h2 {
+    margin-bottom: 35px;
+  }
+}
+
+.location .btn-book {
+  margin-top: 35px;
+}
+
+@media (min-width: 768px) {
+  .location .location-wrap {
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .location .btn-book {
+    margin-top: 10px;
+  }
+}
+
+.location .location-wrap p {
+  opacity: .75;
+}
+
+@media (min-width: 768px) {
+  .location .location-wrap p {
+    width: 50%;
+    padding-right: 10%;
+    margin: 0;
+  }
+}
+
+.location-list {
+  margin-top: 30px;
+  font-family: 'Gilroy';
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .location-list {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.09vw;
+  }
+}
+
+.location-list .location-item {
+  position: relative;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location-list .location-item:hover {
+  text-decoration: underline;
+}
+
+.location-list .location-item:focus {
+  opacity: .75;
+}
+
+@media (min-width: 768px) {
+  .location-list .location-item {
+    margin-bottom: 28px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .location-list .location-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.location-list .location-item::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 18px;
+  margin-right: 8px;
+  background: url("../img/location-marker.svg") center/contain no-repeat;
+}
+
+@media (min-width: 768px) {
+  .location-list .location-item::before {
+    width: 14px;
+    height: 23px;
+    opacity: 0.25;
+  }
+}
